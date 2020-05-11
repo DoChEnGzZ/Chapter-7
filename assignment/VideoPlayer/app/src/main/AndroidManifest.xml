@@ -27,6 +27,7 @@
                 <action android:name="android.intent.action.VIEW" />
                 <data android:scheme="file" />
                 <data android:scheme="content"/>
+                <data android:scheme="android.resource"/>
                 <data android:mimeType="video/mp4" />
                 <data android:mimeType="video/3gpp" />
                 <category android:name="android.intent.category.DEFAULT" />

@@ -38,9 +38,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Intent intent=getIntent();
         Uri uri=intent.getData();
-        Uri bytedance=Uri.parse("file:///sdcard/DCIM/Camera/VID_20200510_121841.mp4");
-        IntentPath=bytedance.getPath();
-        Log.d(TAG,"the path is"+IntentPath);
         button=findViewById(R.id.bt_start);
         videoView=findViewById(R.id.VV);
         seekBar=findViewById(R.id.sb_video);

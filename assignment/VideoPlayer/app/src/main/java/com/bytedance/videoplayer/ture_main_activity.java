@@ -10,13 +10,13 @@ import android.widget.Button;
 public class ture_main_activity extends AppCompatActivity {
 
     public Intent intent;
+    public Intent intent2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ture_main_activity);
-        Uri uri=Uri.parse("content://sdcard/DCIM/Camera/VID_20200510_121841.mp4");
+        Uri uri=Uri.parse(getVideoPath(R.raw.bytedance));
         intent=new Intent(Intent.ACTION_VIEW);
-        // intent=new Intent(this,MainActivity.class);
         intent.setDataAndType(uri,"video/*");
         Button button=findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
